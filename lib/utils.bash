@@ -88,6 +88,7 @@ install_version() {
       pip install -U pip setuptools wheel
       pip install -r requirements.txt
       pip install -e .
+      python scripts/gen-ac-index --include-builtin-index
       deactivate
       popd
 
